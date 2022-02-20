@@ -11130,6 +11130,7 @@ body {
   font-family: "Montserrat";
   line-height: 1.5;
   margin: 0;
+  color: #252525;
 }
 
 .navbar {
@@ -11149,6 +11150,7 @@ body {
   color: #fff;
   padding: 0.5rem 2rem;
   border-radius: 8px;
+  letter-spacing: 0.04em;
 }
 
 .btn_main:hover {
@@ -11164,6 +11166,7 @@ body {
   border: 1px solid #252525;
   padding: 0.5rem 2rem;
   border-radius: 8px;
+  letter-spacing: 0.04em;
 }
 
 .btn_reverse:hover {
@@ -11208,6 +11211,10 @@ h2, .h2 {
   font-weight: 700;
 }
 
+.white {
+  color: #fff;
+}
+
 .fluid_pane {
   background: linear-gradient(116.5deg, #FCDEE1 5.54%, #FDF1EA 66.64%);
   border-radius: 30px;
@@ -11215,6 +11222,14 @@ h2, .h2 {
 
 .light-grey {
   color: #707070;
+}
+
+.light-white {
+  color: #D4D4D4;
+}
+
+.light-color {
+  opacity: 0.8;
 }
 
 .section-1 {
@@ -11295,4 +11310,22 @@ h2, .h2 {
 .section-5 a {
   font-weight: 600;
   cursor: pointer;
+}
+
+.section-6 .profile_pane:after {
+  content: "";
+  position: absolute;
+  background-image: url("../assets/images/comma_2.png");
+  width: 57px;
+  height: 40px;
+  right: 5%;
+  bottom: -15px;
+}
+
+footer {
+  background: #292A2A;
+}
+footer .copyright {
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
