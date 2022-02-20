@@ -1,0 +1,199 @@
+// Changing the theme colors
+$primary: #3ec89d;
+$secondary: #3ab7ff;
+$success: #65ff9f;
+$info: #7164ff;
+$warning: #ff9f65;
+$danger: #ff457b;
+$dark: #18181d; 
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "AbhayaLibre";
+  src: url("../assets/fonts/AbhayaLibre-Regular.ttf");
+}
+
+body {
+  font-family: 'Montserrat';
+  line-height: 1.5;
+  margin: 0;
+}
+
+.navbar {
+  font-weight: 500;
+}
+.nav-item {
+  padding: 1rem;
+
+  .nav-link {
+    color: #252525;
+  }
+}
+.btn_main {
+  font-weight: 600;
+  background-color: #252525;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+}
+.btn_main:hover {
+  color: #252525;
+  background-color: transparent;
+  border-color: #252525;
+}
+.btn_reverse {
+  font-weight: 600;
+  background-color: transparent;
+  color: #252525;
+  border: 1px solid #252525;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+}
+.btn_reverse:hover {
+  color: #fff;
+  background-color: #252525;
+  border-color: #252525;
+}
+.sub_menu:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  top: 32px;
+  right: 7px;
+  background-image: url("../assets/images/arrow_drop_down.png");
+}
+h2 {
+  font-family: "AbhayaLibre";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 68px;
+  color: #252525;
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+}
+.orange {
+  color: #FF6600;
+}
+.bold {
+  font-weight: 700;
+}
+.fluid_pane {
+  background: linear-gradient(116.5deg, #FCDEE1 5.54%, #FDF1EA 66.64%);
+  border-radius: 30px;
+}
+.light-grey {
+  color: #707070;
+}
+
+.section-1 {
+  background: linear-gradient(146.65deg, #FAD2DD -50.35%, #FFF1E5 88.7%);
+  border-radius: 0 0 20% 0;
+
+  h1 {
+    font-family: "AbhayaLibre";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 68px;
+  }
+
+  .progress_bar {
+    width: 145px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    margin: 0 1rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: #D3DDE0;
+      width: 20%;
+      height: 100%;
+    }
+  }
+
+  .effect_pane {
+    &:before {
+      content: '';
+      position: absolute;
+      background-image: url("../assets/images/effect_1.png");
+      width: 150px;
+      height: 148px;
+      left: -100px;
+      bottom: 70px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-image: url("../assets/images/effect_2.png");
+      width: 57px;
+      height: 57px;
+      right: 0;
+      bottom: 40%;
+    }
+  }
+}
+
+.section-2 {
+  .step_num {
+    font-family: "AbhayaLibre";
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 72px;
+    padding: 0 21px;
+    margin-right: 1rem;
+    color: #FF6600;
+    border: 1px solid #FAD2DD;
+    border-radius: 50%;
+  }
+}
+
+.section-3 {
+  .macbook_pane {
+    transform: translateY(100px);
+  }
+}
+
+.section-4, .section-6 {
+  .profile_pane {
+    border: 1px solid #B19596;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .profile_img {
+    border-radius: 50%;
+  }
+
+  .description {
+    min-height: 120px;
+  }
+}
+
+.section-5 {
+  .border-top-radius {
+    border-radius: 30px 0 0 0;
+  }
+
+  a {
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
